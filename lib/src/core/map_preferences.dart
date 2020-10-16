@@ -3,6 +3,8 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 
 /// Type of map tiles to display.
 enum MapType {
@@ -39,7 +41,10 @@ class MobileMapPreferences {
     this.trafficEnabled = false,
     this.buildingsEnabled = true,
     this.padding = const EdgeInsets.all(0),
+    this.gestureRecognizers,
   });
+
+  final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   /// True if the map should show a compass when rotated.
   final bool compassEnabled;

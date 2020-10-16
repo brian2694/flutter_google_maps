@@ -616,6 +616,7 @@ class GoogleMapState extends gmap.GoogleMapStateBase {
               zoomControlsEnabled: widget.mobilePreferences.zoomControlsEnabled,
               scrollGesturesEnabled:
                   widget.mobilePreferences.scrollGesturesEnabled,
+              gestureRecognizers: widget.mobilePreferences.gestureRecognizers,
             ),
           ),
         ),
