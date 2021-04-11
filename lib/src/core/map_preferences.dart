@@ -41,7 +41,7 @@ class MobileMapPreferences {
     this.trafficEnabled = false,
     this.buildingsEnabled = true,
     this.padding = const EdgeInsets.all(0),
-    this.gestureRecognizers,
+    required this.gestureRecognizers,
   });
 
   final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
