@@ -32,8 +32,8 @@ extension WebGeoCoordBoundsExtensions on GeoCoordBounds {
 
 extension WebLatLngBoundsExtensions on LatLngBounds {
   GeoCoordBounds toGeoCoordBounds() => GeoCoordBounds(
-        northeast: this.northEast?.toGeoCoord() ?? GeoCoord(0.0, 0.0),
-        southwest: this.southWest?.toGeoCoord() ?? GeoCoord(0.0, 0.0),
+        northeast: this.northEast.toGeoCoord(),
+        southwest: this.southWest.toGeoCoord(),
       );
 }
 
